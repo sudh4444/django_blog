@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block content %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BLOG</title>
+</head>
+<body>
+
+    <h1>{{name}}'s attempt to learn django for blogging</h1>
+
+    <p> This is the first try for a blog<br>
+        I should usually keep practicing on this and uploading all that I learn<br>
+        so as to get a summary at the end of the day and also to view which topic should
+        I study in a more detailed form<br>
+    </p>
+
+    <form action = 'add'>
+        Enter 1st number: <input type = "text" name = "num1"><br>
+        Enter 2nd number: <input type = "text" name = "num2"><br>
+        <input type = 'submit'>
+
+    </form>
+
+</body>
+</html>
+{% endblock %}
